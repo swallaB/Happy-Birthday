@@ -30,34 +30,36 @@ h1 {
 }
 
 .note {
-    font-size: 1.2em; /* Adjust font size for better fit */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px; /* Adjust font size for better fit */
     color: #FFEB3B;
+    padding: 100px 50px 50px 50px;
     margin-bottom: 20px;
-    max-height: 200px;
-    visibility: hidden;  /*Initially hidden */
+    max-height: 800px;
+    /*visibility: hidden; 
      
-    overflow: hidden;/* Hide overflow text */
-    white-space: pre-wrap; /* Allow text to wrap */
+    overflow: hidden;
+    white-space: pre-wrap;*/
     }
 
-.typing-animation {
+/*.typing-animation {
     border-right: .15em solid orange;
     white-space: nowrap;
     overflow: hidden;
     width: 0; 
     display: inline-block;
     animation: blink-caret .75s step-end infinite;
-}
+} */
 
 /*@keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }*/
 
-@keyframes blink-caret {
+/*@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
-} 
+}  */
 
 .image-slider {
     
