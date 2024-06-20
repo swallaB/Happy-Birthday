@@ -1,0 +1,138 @@
+/* styles.css */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive, sans-serif;
+    text-align: center;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjJsa2RhMjgwNWVjdTRqaHR1cGI5aDRiNHhibTJtNmN6ODhjd2V2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9drOXMeWFH9yt3IOgH/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(18, 16, 16, 0.92);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: auto;
+    color: #fff;
+}
+
+h1 {
+   
+    font-size: 60px;
+    color: #f4cc07;
+    margin: 10px;
+}
+
+.note {
+    font-size: 1.2em; /* Adjust font size for better fit */
+    color: #FFEB3B;
+    margin-bottom: 20px;
+    max-height: 200px;
+    visibility: hidden;  /*Initially hidden */
+     
+    overflow: hidden;/* Hide overflow text */
+    white-space: pre-wrap; /* Allow text to wrap */
+    }
+
+.typing-animation {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+}
+
+/*@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}*/
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+} 
+
+.image-slider {
+    
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.balloons, .pops {
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.balloon, .pop {
+    position: absolute;
+    bottom: 0;
+}
+
+.balloon {
+    margin-bottom: 100px;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(to bottom, #e64c66, #faf443);
+    border-radius: 50% 50% 0 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+.balloon:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.balloon1 { left: 10%; animation-delay: 0s; }
+.balloon2 { left: 30%; animation-delay: 1s; }
+.balloon3 { left: 50%; animation-delay: 2s; }
+.balloon4 { left: 70%; animation-delay: 3s; }
+.balloon5 { left: 90%; animation-delay: 4s; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f32905;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #FF7F50;
+}
